@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\KategoriContorller;
+use App\Http\Controllers\LevelContorller;
+use App\Http\Controllers\UserContorller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   return view('welcome');
 });
 
-Route::get('/level');
-
+Route::get('/level', [LevelContorller::class, 'index']);
+Route::get('/kategori', [KategoriContorller::class, 'index']);
+Route::get('/user', [UserContorller::class, 'index']);
