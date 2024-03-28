@@ -6,6 +6,7 @@ use App\Http\Controllers\LevelContorller;
 use App\Http\Controllers\LevelController;
 use App\Http\Controllers\UserContorller;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WelcomeController;
 use Database\Seeders\LevelSeeder;
 use Illuminate\Support\Facades\Route;
 
@@ -34,3 +35,4 @@ Route::put('/user/ubah_simpan/{id}', [UserController::class, 'ubah_simpan']);
 Route::get('/user/hapus/{id}', [UserController::class, 'hapus']);
 Route::get('/kategori/create', [KategoriController::class, 'create']);
 Route::post('/kategori', [KategoriController::class, 'store']);
+Route::get('/', [WelcomeController::class, 'index']);

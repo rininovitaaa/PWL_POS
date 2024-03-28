@@ -16,7 +16,7 @@
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
-    @include('layouts.header')
+    @include('layout.header')
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
@@ -28,7 +28,7 @@
     </a>
 
     <!-- /.sidebar -->
-    @include('layouts.sidebar')
+    @include('layout.sidebar')
     <!-- /.sidebar -->
   </aside>
 
@@ -45,13 +45,13 @@
   </div>
   <!-- /.content-wrapper -->
 
-@include('layouts.footer')
+@include('layout.footer')
 </div>
 <!-- jQuery -->
 <script src="{{asset('adminlte/plugins/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{asset('adminlte/plugins/bootsrap/js/bootstarp.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{'adminlte/dist/js/adminlte.min.js')}}"></script>
+<script src="{{asset ('adminlte/dist/js/adminlte.min.js')}}"></script>
 </body>
 </html>
