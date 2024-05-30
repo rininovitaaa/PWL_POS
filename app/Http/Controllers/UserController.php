@@ -46,7 +46,7 @@ class UserController extends Controller
                 $btn .= '<form class="d-inline-block" method="POST" action="'.url('/user/'.$user->user_id).'">'. csrf_field() . method_field('DELETE') .'<button type="submit" class="btn btn-danger btn-sm"onclick="return confirm(\'Apakah Anda yakit menghapus data ini?\');">Hapus</button></form>';
             return $btn;
         })
-        ->rawColumns(['aksi']) // memberitahu bahwa kolom aksi adalah html 
+        ->rawColumns(['aksi']) // memberitahu bahwa kolom aksi adalah html
         ->make(true);
     }
 
